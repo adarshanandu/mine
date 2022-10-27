@@ -1,3 +1,10 @@
-#!/bin/bash
-echo "hello world"
-echo "my first edit"
+pipeline {
+    agent any
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
